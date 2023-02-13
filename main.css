@@ -1,0 +1,630 @@
+@import url("https://fonts.googleapis.com/css2?family=Arizonia&family=Charmonman:wght@400;700&family=Dancing+Script:wght@400;600;700&family=Monoton&family=Mr+Dafoe&family=Mrs+Saint+Delafield&family=Open+Sans:wght@300;400;500;600;700;800&family=Roboto:wght@400;500;700;900&family=Sofia+Sans:wght@200;300;400;500;600;700;800;900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.header {
+  background-color: #24292e;
+  display: flex;
+  align-items: center;
+  padding: 15px;
+}
+.header-logo {
+  display: flex;
+  margin-left: 30px;
+  margin-right: 16px;
+  font-weight: bolder;
+  align-items: center;
+  justify-content: center;
+  transform: scale(1.8);
+}
+.header-logo i {
+  color: #fff;
+  font-weight: bolder;
+  transition: 0.5s ease;
+}
+.header-logo i:hover {
+  color: #bbb;
+  cursor: pointer;
+}
+.header-search {
+  position: relative;
+}
+.header-search input {
+  background-color: hsla(0deg, 0%, 100%, 0.125);
+  width: 300px;
+  height: 25px;
+  padding: 10px;
+  font-size: 12px;
+  color: #fff;
+  border: none;
+  margin-right: 15px;
+  border-radius: 5px;
+}
+.header-search i {
+  color: #ccc;
+  position: absolute;
+  left: 275px;
+  top: 2px;
+}
+.header-links a {
+  color: #fff;
+  text-decoration: none;
+  margin-right: 16px;
+  font-family: "Open sans", "Roboto", sans-serif;
+  transition: 0.5s ease;
+}
+.header-links a:hover {
+  color: #bbb;
+}
+.header-rightLinks {
+  margin-left: auto;
+}
+.header-rightLinks i {
+  color: #ccc;
+  margin-right: 15px;
+}
+
+a,
+p {
+  font-family: "Open sans", "Roboto", sans-serif;
+}
+
+.main {
+  width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+}
+.main-about {
+  display: flex;
+  flex-direction: column;
+}
+.main-about .emty {
+  width: 300px;
+  height: 81px;
+  border-bottom: 2px solid #bbb;
+  padding-right: 0;
+}
+.main-about-image img {
+  width: 280px;
+  background-color: #fff;
+  border: 2px solid #cde;
+  border-radius: 50%;
+  margin-top: 40px;
+  position: relative;
+  top: -70px;
+  z-index: 10;
+}
+.main-about-title {
+  position: relative;
+  top: -70px;
+}
+.main-about-title h3 {
+  margin-top: 20px;
+}
+.main-about-title h4 {
+  font-size: 18px;
+  color: #bbb;
+  margin-bottom: 10px;
+}
+.main-about-title button {
+  width: 280px;
+  height: 30px;
+  border-radius: 5px;
+  border-color: #ccc;
+  font-family: "Open sans", "Roboto", sans-serif;
+  transition: 0.5s ease;
+}
+.main-about-title button:hover {
+  background-color: #bbb;
+}
+.main-about-title .follow {
+  margin: 10px 0 20px 0;
+}
+.main-about-title .follow a {
+  text-decoration: none;
+  color: #000;
+  font-weight: lighter;
+  margin: 10px;
+}
+.main-about-title .soical {
+  display: flex;
+  flex-direction: column;
+}
+.main-about-title .soical .twitter {
+  display: flex;
+}
+.main-about-title .soical .twitter i {
+  margin-right: 10px;
+}
+.main-about-title .soical .linkdn {
+  display: flex;
+}
+.main-about-title .soical .linkdn i {
+  margin-right: 10px;
+}
+.main-about-dsc {
+  position: relative;
+  top: -70px;
+  border: 1px solid #ccc;
+  background-color: #ccc;
+  border-radius: 10px;
+  width: 280px;
+  height: 40px;
+}
+.main-about-dsc p {
+  padding-left: 30%;
+  padding-top: 8px;
+}
+
+.main-projects {
+  width: 900px;
+}
+.main-projects-links {
+  padding-top: 40px;
+  padding-bottom: 15px;
+  border-bottom: 2px solid #bbb;
+}
+.main-projects-links a {
+  text-decoration: none;
+  color: #000;
+  padding-left: 15px;
+  padding-right: 15px;
+  transition: 0.5s ease;
+}
+.main-projects-links a:hover {
+  background-color: #eee;
+  border-radius: 10px;
+}
+.main-projects .section {
+  display: flex;
+  justify-content: space-between;
+}
+.main-projects .section p {
+  margin-top: 40px;
+  margin-bottom: 10px;
+}
+.main-projects .section a {
+  text-decoration: none;
+  color: #000;
+  margin-top: 40px;
+  margin-bottom: 10px;
+}
+.main-projects .main-project-bar .main-project-first,
+.main-projects .main-project-bar .main-project-second,
+.main-projects .main-project-bar .main-project-third {
+  display: flex;
+  gap: 15px;
+  margin: 15px;
+}
+.main-projects .main-project-bar .main-project-first a,
+.main-projects .main-project-bar .main-project-second a,
+.main-projects .main-project-bar .main-project-third a {
+  font-family: "Open sans", "Roboto", sans-serif;
+  font-weight: bold;
+  text-decoration: none;
+  transition: 0.5s ease;
+}
+.main-projects .main-project-bar .main-project-first a:hover,
+.main-projects .main-project-bar .main-project-second a:hover,
+.main-projects .main-project-bar .main-project-third a:hover {
+  text-decoration: underline;
+}
+.main-projects .main-project-bar .main-project-first button,
+.main-projects .main-project-bar .main-project-second button,
+.main-projects .main-project-bar .main-project-third button {
+  width: 60px;
+  font-weight: lighter;
+  color: #bbb;
+  background-color: #fff;
+  border: 1px solid #bbb;
+  border-radius: 15px;
+  display: disabled;
+  cursor: auto;
+}
+.main-projects .main-project-bar .main-project-first .mpf-left,
+.main-projects .main-project-bar .main-project-first .mps-left,
+.main-projects .main-project-bar .main-project-first .mpt-left,
+.main-projects .main-project-bar .main-project-first .mpf-right,
+.main-projects .main-project-bar .main-project-first .mps-right,
+.main-projects .main-project-bar .main-project-first .mpt-right,
+.main-projects .main-project-bar .main-project-second .mpf-left,
+.main-projects .main-project-bar .main-project-second .mps-left,
+.main-projects .main-project-bar .main-project-second .mpt-left,
+.main-projects .main-project-bar .main-project-second .mpf-right,
+.main-projects .main-project-bar .main-project-second .mps-right,
+.main-projects .main-project-bar .main-project-second .mpt-right,
+.main-projects .main-project-bar .main-project-third .mpf-left,
+.main-projects .main-project-bar .main-project-third .mps-left,
+.main-projects .main-project-bar .main-project-third .mpt-left,
+.main-projects .main-project-bar .main-project-third .mpf-right,
+.main-projects .main-project-bar .main-project-third .mps-right,
+.main-projects .main-project-bar .main-project-third .mpt-right {
+  border: 1px solid #bbb;
+  border-radius: 8px;
+  width: 445px;
+}
+.main-projects .main-project-bar .main-project-first .mpf-left .mpf-leftTop,
+.main-projects .main-project-bar .main-project-first .mpf-left .mps-leftTop,
+.main-projects .main-project-bar .main-project-first .mpf-left .mpt-leftTop,
+.main-projects .main-project-bar .main-project-first .mpf-left .mpf-rightTop,
+.main-projects .main-project-bar .main-project-first .mpf-left .mps-rightTop,
+.main-projects .main-project-bar .main-project-first .mpf-left .mpt-rightTop,
+.main-projects .main-project-bar .main-project-first .mps-left .mpf-leftTop,
+.main-projects .main-project-bar .main-project-first .mps-left .mps-leftTop,
+.main-projects .main-project-bar .main-project-first .mps-left .mpt-leftTop,
+.main-projects .main-project-bar .main-project-first .mps-left .mpf-rightTop,
+.main-projects .main-project-bar .main-project-first .mps-left .mps-rightTop,
+.main-projects .main-project-bar .main-project-first .mps-left .mpt-rightTop,
+.main-projects .main-project-bar .main-project-first .mpt-left .mpf-leftTop,
+.main-projects .main-project-bar .main-project-first .mpt-left .mps-leftTop,
+.main-projects .main-project-bar .main-project-first .mpt-left .mpt-leftTop,
+.main-projects .main-project-bar .main-project-first .mpt-left .mpf-rightTop,
+.main-projects .main-project-bar .main-project-first .mpt-left .mps-rightTop,
+.main-projects .main-project-bar .main-project-first .mpt-left .mpt-rightTop,
+.main-projects .main-project-bar .main-project-first .mpf-right .mpf-leftTop,
+.main-projects .main-project-bar .main-project-first .mpf-right .mps-leftTop,
+.main-projects .main-project-bar .main-project-first .mpf-right .mpt-leftTop,
+.main-projects .main-project-bar .main-project-first .mpf-right .mpf-rightTop,
+.main-projects .main-project-bar .main-project-first .mpf-right .mps-rightTop,
+.main-projects .main-project-bar .main-project-first .mpf-right .mpt-rightTop,
+.main-projects .main-project-bar .main-project-first .mps-right .mpf-leftTop,
+.main-projects .main-project-bar .main-project-first .mps-right .mps-leftTop,
+.main-projects .main-project-bar .main-project-first .mps-right .mpt-leftTop,
+.main-projects .main-project-bar .main-project-first .mps-right .mpf-rightTop,
+.main-projects .main-project-bar .main-project-first .mps-right .mps-rightTop,
+.main-projects .main-project-bar .main-project-first .mps-right .mpt-rightTop,
+.main-projects .main-project-bar .main-project-first .mpt-right .mpf-leftTop,
+.main-projects .main-project-bar .main-project-first .mpt-right .mps-leftTop,
+.main-projects .main-project-bar .main-project-first .mpt-right .mpt-leftTop,
+.main-projects .main-project-bar .main-project-first .mpt-right .mpf-rightTop,
+.main-projects .main-project-bar .main-project-first .mpt-right .mps-rightTop,
+.main-projects .main-project-bar .main-project-first .mpt-right .mpt-rightTop,
+.main-projects .main-project-bar .main-project-second .mpf-left .mpf-leftTop,
+.main-projects .main-project-bar .main-project-second .mpf-left .mps-leftTop,
+.main-projects .main-project-bar .main-project-second .mpf-left .mpt-leftTop,
+.main-projects .main-project-bar .main-project-second .mpf-left .mpf-rightTop,
+.main-projects .main-project-bar .main-project-second .mpf-left .mps-rightTop,
+.main-projects .main-project-bar .main-project-second .mpf-left .mpt-rightTop,
+.main-projects .main-project-bar .main-project-second .mps-left .mpf-leftTop,
+.main-projects .main-project-bar .main-project-second .mps-left .mps-leftTop,
+.main-projects .main-project-bar .main-project-second .mps-left .mpt-leftTop,
+.main-projects .main-project-bar .main-project-second .mps-left .mpf-rightTop,
+.main-projects .main-project-bar .main-project-second .mps-left .mps-rightTop,
+.main-projects .main-project-bar .main-project-second .mps-left .mpt-rightTop,
+.main-projects .main-project-bar .main-project-second .mpt-left .mpf-leftTop,
+.main-projects .main-project-bar .main-project-second .mpt-left .mps-leftTop,
+.main-projects .main-project-bar .main-project-second .mpt-left .mpt-leftTop,
+.main-projects .main-project-bar .main-project-second .mpt-left .mpf-rightTop,
+.main-projects .main-project-bar .main-project-second .mpt-left .mps-rightTop,
+.main-projects .main-project-bar .main-project-second .mpt-left .mpt-rightTop,
+.main-projects .main-project-bar .main-project-second .mpf-right .mpf-leftTop,
+.main-projects .main-project-bar .main-project-second .mpf-right .mps-leftTop,
+.main-projects .main-project-bar .main-project-second .mpf-right .mpt-leftTop,
+.main-projects .main-project-bar .main-project-second .mpf-right .mpf-rightTop,
+.main-projects .main-project-bar .main-project-second .mpf-right .mps-rightTop,
+.main-projects .main-project-bar .main-project-second .mpf-right .mpt-rightTop,
+.main-projects .main-project-bar .main-project-second .mps-right .mpf-leftTop,
+.main-projects .main-project-bar .main-project-second .mps-right .mps-leftTop,
+.main-projects .main-project-bar .main-project-second .mps-right .mpt-leftTop,
+.main-projects .main-project-bar .main-project-second .mps-right .mpf-rightTop,
+.main-projects .main-project-bar .main-project-second .mps-right .mps-rightTop,
+.main-projects .main-project-bar .main-project-second .mps-right .mpt-rightTop,
+.main-projects .main-project-bar .main-project-second .mpt-right .mpf-leftTop,
+.main-projects .main-project-bar .main-project-second .mpt-right .mps-leftTop,
+.main-projects .main-project-bar .main-project-second .mpt-right .mpt-leftTop,
+.main-projects .main-project-bar .main-project-second .mpt-right .mpf-rightTop,
+.main-projects .main-project-bar .main-project-second .mpt-right .mps-rightTop,
+.main-projects .main-project-bar .main-project-second .mpt-right .mpt-rightTop,
+.main-projects .main-project-bar .main-project-third .mpf-left .mpf-leftTop,
+.main-projects .main-project-bar .main-project-third .mpf-left .mps-leftTop,
+.main-projects .main-project-bar .main-project-third .mpf-left .mpt-leftTop,
+.main-projects .main-project-bar .main-project-third .mpf-left .mpf-rightTop,
+.main-projects .main-project-bar .main-project-third .mpf-left .mps-rightTop,
+.main-projects .main-project-bar .main-project-third .mpf-left .mpt-rightTop,
+.main-projects .main-project-bar .main-project-third .mps-left .mpf-leftTop,
+.main-projects .main-project-bar .main-project-third .mps-left .mps-leftTop,
+.main-projects .main-project-bar .main-project-third .mps-left .mpt-leftTop,
+.main-projects .main-project-bar .main-project-third .mps-left .mpf-rightTop,
+.main-projects .main-project-bar .main-project-third .mps-left .mps-rightTop,
+.main-projects .main-project-bar .main-project-third .mps-left .mpt-rightTop,
+.main-projects .main-project-bar .main-project-third .mpt-left .mpf-leftTop,
+.main-projects .main-project-bar .main-project-third .mpt-left .mps-leftTop,
+.main-projects .main-project-bar .main-project-third .mpt-left .mpt-leftTop,
+.main-projects .main-project-bar .main-project-third .mpt-left .mpf-rightTop,
+.main-projects .main-project-bar .main-project-third .mpt-left .mps-rightTop,
+.main-projects .main-project-bar .main-project-third .mpt-left .mpt-rightTop,
+.main-projects .main-project-bar .main-project-third .mpf-right .mpf-leftTop,
+.main-projects .main-project-bar .main-project-third .mpf-right .mps-leftTop,
+.main-projects .main-project-bar .main-project-third .mpf-right .mpt-leftTop,
+.main-projects .main-project-bar .main-project-third .mpf-right .mpf-rightTop,
+.main-projects .main-project-bar .main-project-third .mpf-right .mps-rightTop,
+.main-projects .main-project-bar .main-project-third .mpf-right .mpt-rightTop,
+.main-projects .main-project-bar .main-project-third .mps-right .mpf-leftTop,
+.main-projects .main-project-bar .main-project-third .mps-right .mps-leftTop,
+.main-projects .main-project-bar .main-project-third .mps-right .mpt-leftTop,
+.main-projects .main-project-bar .main-project-third .mps-right .mpf-rightTop,
+.main-projects .main-project-bar .main-project-third .mps-right .mps-rightTop,
+.main-projects .main-project-bar .main-project-third .mps-right .mpt-rightTop,
+.main-projects .main-project-bar .main-project-third .mpt-right .mpf-leftTop,
+.main-projects .main-project-bar .main-project-third .mpt-right .mps-leftTop,
+.main-projects .main-project-bar .main-project-third .mpt-right .mpt-leftTop,
+.main-projects .main-project-bar .main-project-third .mpt-right .mpf-rightTop,
+.main-projects .main-project-bar .main-project-third .mpt-right .mps-rightTop,
+.main-projects .main-project-bar .main-project-third .mpt-right .mpt-rightTop {
+  display: flex;
+  justify-content: space-between;
+  margin: 10px;
+}
+.main-projects .main-project-bar .main-project-first .mpf-left .mpf-leftBottom,
+.main-projects .main-project-bar .main-project-first .mpf-left .mpt-leftBottom,
+.main-projects .main-project-bar .main-project-first .mpf-left .mpt-rightBottom,
+.main-projects .main-project-bar .main-project-first .mps-left .mpf-leftBottom,
+.main-projects .main-project-bar .main-project-first .mps-left .mpt-leftBottom,
+.main-projects .main-project-bar .main-project-first .mps-left .mpt-rightBottom,
+.main-projects .main-project-bar .main-project-first .mpt-left .mpf-leftBottom,
+.main-projects .main-project-bar .main-project-first .mpt-left .mpt-leftBottom,
+.main-projects .main-project-bar .main-project-first .mpt-left .mpt-rightBottom,
+.main-projects .main-project-bar .main-project-first .mpf-right .mpf-leftBottom,
+.main-projects .main-project-bar .main-project-first .mpf-right .mpt-leftBottom,
+.main-projects .main-project-bar .main-project-first .mpf-right .mpt-rightBottom,
+.main-projects .main-project-bar .main-project-first .mps-right .mpf-leftBottom,
+.main-projects .main-project-bar .main-project-first .mps-right .mpt-leftBottom,
+.main-projects .main-project-bar .main-project-first .mps-right .mpt-rightBottom,
+.main-projects .main-project-bar .main-project-first .mpt-right .mpf-leftBottom,
+.main-projects .main-project-bar .main-project-first .mpt-right .mpt-leftBottom,
+.main-projects .main-project-bar .main-project-first .mpt-right .mpt-rightBottom,
+.main-projects .main-project-bar .main-project-second .mpf-left .mpf-leftBottom,
+.main-projects .main-project-bar .main-project-second .mpf-left .mpt-leftBottom,
+.main-projects .main-project-bar .main-project-second .mpf-left .mpt-rightBottom,
+.main-projects .main-project-bar .main-project-second .mps-left .mpf-leftBottom,
+.main-projects .main-project-bar .main-project-second .mps-left .mpt-leftBottom,
+.main-projects .main-project-bar .main-project-second .mps-left .mpt-rightBottom,
+.main-projects .main-project-bar .main-project-second .mpt-left .mpf-leftBottom,
+.main-projects .main-project-bar .main-project-second .mpt-left .mpt-leftBottom,
+.main-projects .main-project-bar .main-project-second .mpt-left .mpt-rightBottom,
+.main-projects .main-project-bar .main-project-second .mpf-right .mpf-leftBottom,
+.main-projects .main-project-bar .main-project-second .mpf-right .mpt-leftBottom,
+.main-projects .main-project-bar .main-project-second .mpf-right .mpt-rightBottom,
+.main-projects .main-project-bar .main-project-second .mps-right .mpf-leftBottom,
+.main-projects .main-project-bar .main-project-second .mps-right .mpt-leftBottom,
+.main-projects .main-project-bar .main-project-second .mps-right .mpt-rightBottom,
+.main-projects .main-project-bar .main-project-second .mpt-right .mpf-leftBottom,
+.main-projects .main-project-bar .main-project-second .mpt-right .mpt-leftBottom,
+.main-projects .main-project-bar .main-project-second .mpt-right .mpt-rightBottom,
+.main-projects .main-project-bar .main-project-third .mpf-left .mpf-leftBottom,
+.main-projects .main-project-bar .main-project-third .mpf-left .mpt-leftBottom,
+.main-projects .main-project-bar .main-project-third .mpf-left .mpt-rightBottom,
+.main-projects .main-project-bar .main-project-third .mps-left .mpf-leftBottom,
+.main-projects .main-project-bar .main-project-third .mps-left .mpt-leftBottom,
+.main-projects .main-project-bar .main-project-third .mps-left .mpt-rightBottom,
+.main-projects .main-project-bar .main-project-third .mpt-left .mpf-leftBottom,
+.main-projects .main-project-bar .main-project-third .mpt-left .mpt-leftBottom,
+.main-projects .main-project-bar .main-project-third .mpt-left .mpt-rightBottom,
+.main-projects .main-project-bar .main-project-third .mpf-right .mpf-leftBottom,
+.main-projects .main-project-bar .main-project-third .mpf-right .mpt-leftBottom,
+.main-projects .main-project-bar .main-project-third .mpf-right .mpt-rightBottom,
+.main-projects .main-project-bar .main-project-third .mps-right .mpf-leftBottom,
+.main-projects .main-project-bar .main-project-third .mps-right .mpt-leftBottom,
+.main-projects .main-project-bar .main-project-third .mps-right .mpt-rightBottom,
+.main-projects .main-project-bar .main-project-third .mpt-right .mpf-leftBottom,
+.main-projects .main-project-bar .main-project-third .mpt-right .mpt-leftBottom,
+.main-projects .main-project-bar .main-project-third .mpt-right .mpt-rightBottom {
+  display: flex;
+  margin: 10px;
+}
+.main-projects .main-project-bar .main-project-first .mpf-left .mpf-leftBottom i,
+.main-projects .main-project-bar .main-project-first .mpf-left .mpt-leftBottom i,
+.main-projects .main-project-bar .main-project-first .mpf-left .mpt-rightBottom i,
+.main-projects .main-project-bar .main-project-first .mps-left .mpf-leftBottom i,
+.main-projects .main-project-bar .main-project-first .mps-left .mpt-leftBottom i,
+.main-projects .main-project-bar .main-project-first .mps-left .mpt-rightBottom i,
+.main-projects .main-project-bar .main-project-first .mpt-left .mpf-leftBottom i,
+.main-projects .main-project-bar .main-project-first .mpt-left .mpt-leftBottom i,
+.main-projects .main-project-bar .main-project-first .mpt-left .mpt-rightBottom i,
+.main-projects .main-project-bar .main-project-first .mpf-right .mpf-leftBottom i,
+.main-projects .main-project-bar .main-project-first .mpf-right .mpt-leftBottom i,
+.main-projects .main-project-bar .main-project-first .mpf-right .mpt-rightBottom i,
+.main-projects .main-project-bar .main-project-first .mps-right .mpf-leftBottom i,
+.main-projects .main-project-bar .main-project-first .mps-right .mpt-leftBottom i,
+.main-projects .main-project-bar .main-project-first .mps-right .mpt-rightBottom i,
+.main-projects .main-project-bar .main-project-first .mpt-right .mpf-leftBottom i,
+.main-projects .main-project-bar .main-project-first .mpt-right .mpt-leftBottom i,
+.main-projects .main-project-bar .main-project-first .mpt-right .mpt-rightBottom i,
+.main-projects .main-project-bar .main-project-second .mpf-left .mpf-leftBottom i,
+.main-projects .main-project-bar .main-project-second .mpf-left .mpt-leftBottom i,
+.main-projects .main-project-bar .main-project-second .mpf-left .mpt-rightBottom i,
+.main-projects .main-project-bar .main-project-second .mps-left .mpf-leftBottom i,
+.main-projects .main-project-bar .main-project-second .mps-left .mpt-leftBottom i,
+.main-projects .main-project-bar .main-project-second .mps-left .mpt-rightBottom i,
+.main-projects .main-project-bar .main-project-second .mpt-left .mpf-leftBottom i,
+.main-projects .main-project-bar .main-project-second .mpt-left .mpt-leftBottom i,
+.main-projects .main-project-bar .main-project-second .mpt-left .mpt-rightBottom i,
+.main-projects .main-project-bar .main-project-second .mpf-right .mpf-leftBottom i,
+.main-projects .main-project-bar .main-project-second .mpf-right .mpt-leftBottom i,
+.main-projects .main-project-bar .main-project-second .mpf-right .mpt-rightBottom i,
+.main-projects .main-project-bar .main-project-second .mps-right .mpf-leftBottom i,
+.main-projects .main-project-bar .main-project-second .mps-right .mpt-leftBottom i,
+.main-projects .main-project-bar .main-project-second .mps-right .mpt-rightBottom i,
+.main-projects .main-project-bar .main-project-second .mpt-right .mpf-leftBottom i,
+.main-projects .main-project-bar .main-project-second .mpt-right .mpt-leftBottom i,
+.main-projects .main-project-bar .main-project-second .mpt-right .mpt-rightBottom i,
+.main-projects .main-project-bar .main-project-third .mpf-left .mpf-leftBottom i,
+.main-projects .main-project-bar .main-project-third .mpf-left .mpt-leftBottom i,
+.main-projects .main-project-bar .main-project-third .mpf-left .mpt-rightBottom i,
+.main-projects .main-project-bar .main-project-third .mps-left .mpf-leftBottom i,
+.main-projects .main-project-bar .main-project-third .mps-left .mpt-leftBottom i,
+.main-projects .main-project-bar .main-project-third .mps-left .mpt-rightBottom i,
+.main-projects .main-project-bar .main-project-third .mpt-left .mpf-leftBottom i,
+.main-projects .main-project-bar .main-project-third .mpt-left .mpt-leftBottom i,
+.main-projects .main-project-bar .main-project-third .mpt-left .mpt-rightBottom i,
+.main-projects .main-project-bar .main-project-third .mpf-right .mpf-leftBottom i,
+.main-projects .main-project-bar .main-project-third .mpf-right .mpt-leftBottom i,
+.main-projects .main-project-bar .main-project-third .mpf-right .mpt-rightBottom i,
+.main-projects .main-project-bar .main-project-third .mps-right .mpf-leftBottom i,
+.main-projects .main-project-bar .main-project-third .mps-right .mpt-leftBottom i,
+.main-projects .main-project-bar .main-project-third .mps-right .mpt-rightBottom i,
+.main-projects .main-project-bar .main-project-third .mpt-right .mpf-leftBottom i,
+.main-projects .main-project-bar .main-project-third .mpt-right .mpt-leftBottom i,
+.main-projects .main-project-bar .main-project-third .mpt-right .mpt-rightBottom i {
+  margin-right: 10px;
+  color: orangered;
+}
+.main-projects .main-project-bar .main-project-first .mpf-left .mpf-rightBottom,
+.main-projects .main-project-bar .main-project-first .mpf-left .mps-leftBottom,
+.main-projects .main-project-bar .main-project-first .mpf-left .mps-rightBottom,
+.main-projects .main-project-bar .main-project-first .mps-left .mpf-rightBottom,
+.main-projects .main-project-bar .main-project-first .mps-left .mps-leftBottom,
+.main-projects .main-project-bar .main-project-first .mps-left .mps-rightBottom,
+.main-projects .main-project-bar .main-project-first .mpt-left .mpf-rightBottom,
+.main-projects .main-project-bar .main-project-first .mpt-left .mps-leftBottom,
+.main-projects .main-project-bar .main-project-first .mpt-left .mps-rightBottom,
+.main-projects .main-project-bar .main-project-first .mpf-right .mpf-rightBottom,
+.main-projects .main-project-bar .main-project-first .mpf-right .mps-leftBottom,
+.main-projects .main-project-bar .main-project-first .mpf-right .mps-rightBottom,
+.main-projects .main-project-bar .main-project-first .mps-right .mpf-rightBottom,
+.main-projects .main-project-bar .main-project-first .mps-right .mps-leftBottom,
+.main-projects .main-project-bar .main-project-first .mps-right .mps-rightBottom,
+.main-projects .main-project-bar .main-project-first .mpt-right .mpf-rightBottom,
+.main-projects .main-project-bar .main-project-first .mpt-right .mps-leftBottom,
+.main-projects .main-project-bar .main-project-first .mpt-right .mps-rightBottom,
+.main-projects .main-project-bar .main-project-second .mpf-left .mpf-rightBottom,
+.main-projects .main-project-bar .main-project-second .mpf-left .mps-leftBottom,
+.main-projects .main-project-bar .main-project-second .mpf-left .mps-rightBottom,
+.main-projects .main-project-bar .main-project-second .mps-left .mpf-rightBottom,
+.main-projects .main-project-bar .main-project-second .mps-left .mps-leftBottom,
+.main-projects .main-project-bar .main-project-second .mps-left .mps-rightBottom,
+.main-projects .main-project-bar .main-project-second .mpt-left .mpf-rightBottom,
+.main-projects .main-project-bar .main-project-second .mpt-left .mps-leftBottom,
+.main-projects .main-project-bar .main-project-second .mpt-left .mps-rightBottom,
+.main-projects .main-project-bar .main-project-second .mpf-right .mpf-rightBottom,
+.main-projects .main-project-bar .main-project-second .mpf-right .mps-leftBottom,
+.main-projects .main-project-bar .main-project-second .mpf-right .mps-rightBottom,
+.main-projects .main-project-bar .main-project-second .mps-right .mpf-rightBottom,
+.main-projects .main-project-bar .main-project-second .mps-right .mps-leftBottom,
+.main-projects .main-project-bar .main-project-second .mps-right .mps-rightBottom,
+.main-projects .main-project-bar .main-project-second .mpt-right .mpf-rightBottom,
+.main-projects .main-project-bar .main-project-second .mpt-right .mps-leftBottom,
+.main-projects .main-project-bar .main-project-second .mpt-right .mps-rightBottom,
+.main-projects .main-project-bar .main-project-third .mpf-left .mpf-rightBottom,
+.main-projects .main-project-bar .main-project-third .mpf-left .mps-leftBottom,
+.main-projects .main-project-bar .main-project-third .mpf-left .mps-rightBottom,
+.main-projects .main-project-bar .main-project-third .mps-left .mpf-rightBottom,
+.main-projects .main-project-bar .main-project-third .mps-left .mps-leftBottom,
+.main-projects .main-project-bar .main-project-third .mps-left .mps-rightBottom,
+.main-projects .main-project-bar .main-project-third .mpt-left .mpf-rightBottom,
+.main-projects .main-project-bar .main-project-third .mpt-left .mps-leftBottom,
+.main-projects .main-project-bar .main-project-third .mpt-left .mps-rightBottom,
+.main-projects .main-project-bar .main-project-third .mpf-right .mpf-rightBottom,
+.main-projects .main-project-bar .main-project-third .mpf-right .mps-leftBottom,
+.main-projects .main-project-bar .main-project-third .mpf-right .mps-rightBottom,
+.main-projects .main-project-bar .main-project-third .mps-right .mpf-rightBottom,
+.main-projects .main-project-bar .main-project-third .mps-right .mps-leftBottom,
+.main-projects .main-project-bar .main-project-third .mps-right .mps-rightBottom,
+.main-projects .main-project-bar .main-project-third .mpt-right .mpf-rightBottom,
+.main-projects .main-project-bar .main-project-third .mpt-right .mps-leftBottom,
+.main-projects .main-project-bar .main-project-third .mpt-right .mps-rightBottom {
+  display: flex;
+  margin: 10px;
+}
+.main-projects .main-project-bar .main-project-first .mpf-left .mpf-rightBottom i,
+.main-projects .main-project-bar .main-project-first .mpf-left .mps-leftBottom i,
+.main-projects .main-project-bar .main-project-first .mpf-left .mps-rightBottom i,
+.main-projects .main-project-bar .main-project-first .mps-left .mpf-rightBottom i,
+.main-projects .main-project-bar .main-project-first .mps-left .mps-leftBottom i,
+.main-projects .main-project-bar .main-project-first .mps-left .mps-rightBottom i,
+.main-projects .main-project-bar .main-project-first .mpt-left .mpf-rightBottom i,
+.main-projects .main-project-bar .main-project-first .mpt-left .mps-leftBottom i,
+.main-projects .main-project-bar .main-project-first .mpt-left .mps-rightBottom i,
+.main-projects .main-project-bar .main-project-first .mpf-right .mpf-rightBottom i,
+.main-projects .main-project-bar .main-project-first .mpf-right .mps-leftBottom i,
+.main-projects .main-project-bar .main-project-first .mpf-right .mps-rightBottom i,
+.main-projects .main-project-bar .main-project-first .mps-right .mpf-rightBottom i,
+.main-projects .main-project-bar .main-project-first .mps-right .mps-leftBottom i,
+.main-projects .main-project-bar .main-project-first .mps-right .mps-rightBottom i,
+.main-projects .main-project-bar .main-project-first .mpt-right .mpf-rightBottom i,
+.main-projects .main-project-bar .main-project-first .mpt-right .mps-leftBottom i,
+.main-projects .main-project-bar .main-project-first .mpt-right .mps-rightBottom i,
+.main-projects .main-project-bar .main-project-second .mpf-left .mpf-rightBottom i,
+.main-projects .main-project-bar .main-project-second .mpf-left .mps-leftBottom i,
+.main-projects .main-project-bar .main-project-second .mpf-left .mps-rightBottom i,
+.main-projects .main-project-bar .main-project-second .mps-left .mpf-rightBottom i,
+.main-projects .main-project-bar .main-project-second .mps-left .mps-leftBottom i,
+.main-projects .main-project-bar .main-project-second .mps-left .mps-rightBottom i,
+.main-projects .main-project-bar .main-project-second .mpt-left .mpf-rightBottom i,
+.main-projects .main-project-bar .main-project-second .mpt-left .mps-leftBottom i,
+.main-projects .main-project-bar .main-project-second .mpt-left .mps-rightBottom i,
+.main-projects .main-project-bar .main-project-second .mpf-right .mpf-rightBottom i,
+.main-projects .main-project-bar .main-project-second .mpf-right .mps-leftBottom i,
+.main-projects .main-project-bar .main-project-second .mpf-right .mps-rightBottom i,
+.main-projects .main-project-bar .main-project-second .mps-right .mpf-rightBottom i,
+.main-projects .main-project-bar .main-project-second .mps-right .mps-leftBottom i,
+.main-projects .main-project-bar .main-project-second .mps-right .mps-rightBottom i,
+.main-projects .main-project-bar .main-project-second .mpt-right .mpf-rightBottom i,
+.main-projects .main-project-bar .main-project-second .mpt-right .mps-leftBottom i,
+.main-projects .main-project-bar .main-project-second .mpt-right .mps-rightBottom i,
+.main-projects .main-project-bar .main-project-third .mpf-left .mpf-rightBottom i,
+.main-projects .main-project-bar .main-project-third .mpf-left .mps-leftBottom i,
+.main-projects .main-project-bar .main-project-third .mpf-left .mps-rightBottom i,
+.main-projects .main-project-bar .main-project-third .mps-left .mpf-rightBottom i,
+.main-projects .main-project-bar .main-project-third .mps-left .mps-leftBottom i,
+.main-projects .main-project-bar .main-project-third .mps-left .mps-rightBottom i,
+.main-projects .main-project-bar .main-project-third .mpt-left .mpf-rightBottom i,
+.main-projects .main-project-bar .main-project-third .mpt-left .mps-leftBottom i,
+.main-projects .main-project-bar .main-project-third .mpt-left .mps-rightBottom i,
+.main-projects .main-project-bar .main-project-third .mpf-right .mpf-rightBottom i,
+.main-projects .main-project-bar .main-project-third .mpf-right .mps-leftBottom i,
+.main-projects .main-project-bar .main-project-third .mpf-right .mps-rightBottom i,
+.main-projects .main-project-bar .main-project-third .mps-right .mpf-rightBottom i,
+.main-projects .main-project-bar .main-project-third .mps-right .mps-leftBottom i,
+.main-projects .main-project-bar .main-project-third .mps-right .mps-rightBottom i,
+.main-projects .main-project-bar .main-project-third .mpt-right .mpf-rightBottom i,
+.main-projects .main-project-bar .main-project-third .mpt-right .mps-leftBottom i,
+.main-projects .main-project-bar .main-project-third .mpt-right .mps-rightBottom i {
+  margin-right: 10px;
+  color: purple;
+}
+
+footer {
+  width: 1200px;
+  height: 100px;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  border-top: 1px solid #bbb;
+}
+footer .footer-logo {
+  width: 250px;
+  display: flex;
+  padding: 40px;
+}
+footer .footer-logo i {
+  color: #767676;
+  font-weight: bolder;
+  transform: scale(1.5);
+  margin-right: 15px;
+}
+footer .footer-logo p {
+  font-size: 12px;
+}
+footer .footer-nav {
+  width: 950px;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+footer .footer-nav a {
+  font-size: 12px;
+  text-decoration: none;
+  transition: 0.5s ease;
+}
+footer .footer-nav a:hover {
+  text-decoration: underline;
+}/*# sourceMappingURL=main.css.map */
