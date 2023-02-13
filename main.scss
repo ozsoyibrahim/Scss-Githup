@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Arizonia&family=Charmonman:wght@400;700&family=Dancing+Script:wght@400;600;700&family=Monoton&family=Mr+Dafoe&family=Mrs+Saint+Delafield&family=Open+Sans:wght@300;400;500;600;700;800&family=Roboto:wght@400;500;700;900&family=Sofia+Sans:wght@200;300;400;500;600;700;800;900&display=swap');
 
 @import 'variables';
+@import 'mixin';
 
 * {
     margin: 0;
@@ -11,11 +12,6 @@
 html {
     scroll-behavior: smooth;
 }
-
-$header-bg: #24292e;
-$my-font: "Open sans",
-"Roboto",
-sans-serif;
 
 .header {
     background-color: $header-bg;
@@ -148,7 +144,7 @@ p {
                 border-color: #ccc;
                 font-family: $my-font;
                 transition: 0.5s ease;
-    
+
                 &:hover {
                     background-color: #bbb;
                 }
@@ -249,31 +245,14 @@ p {
         .main-project-first,
         .main-project-second,
         .main-project-third {
-            display: flex;
-            gap: 15px;
-            margin: 15px;
+            @include mpfst;
 
             a {
-                font-family: $my-font;
-                font-weight: bold;
-                text-decoration: none;
-                transition: 0.5s ease;
-
-                &:hover {
-                    text-decoration: underline;
-                }
+                @include mpfst-a;                
             }
 
             button {
-                width: 60px;
-                font-weight: lighter;
-                color: #bbb;
-                background-color: #fff;
-                border: 1px solid #bbb;
-                border-radius: 15px;
-                display: disabled;
-                cursor: auto;
-
+                @include mpfst-button;                
             }
 
             .mpf-left,
@@ -282,9 +261,7 @@ p {
             .mpf-right,
             .mps-right,
             .mpt-right {
-                border: 1px solid #bbb;
-                border-radius: 8px;
-                width: 445px;
+                @include mpfst-lr;
 
                 .mpf-leftTop,
                 .mps-leftTop,
@@ -292,34 +269,20 @@ p {
                 .mpf-rightTop,
                 .mps-rightTop,
                 .mpt-rightTop {
-                    display: flex;
-                    justify-content: space-between;
-                    margin: 10px;
+                    @include mpfst-lrTop;
 
                 }
 
                 .mpf-leftBottom,
                 .mpt-leftBottom,
                 .mpt-rightBottom {
-                    display: flex;
-                    margin: 10px;
-
-                    i {
-                        margin-right: 10px;
-                        color: orangered;
-                    }
+                    @include mpfst-lrBottonOrange;
                 }
 
                 .mpf-rightBottom,
                 .mps-leftBottom,
                 .mps-rightBottom {
-                    display: flex;
-                    margin: 10px;
-
-                    i {
-                        margin-right: 10px;
-                        color: purple;
-                    }
+                    @include mpfst-lrBottonPurple;
                 }
             }
         }

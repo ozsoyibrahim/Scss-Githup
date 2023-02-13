@@ -1,0 +1,61 @@
+@mixin mpfst {
+    display: flex;
+    gap: 15px;
+    margin: 15px;
+
+}
+
+@mixin mpfst-a {
+    font-family: $my-font;
+    font-weight: bold;
+    text-decoration: none;
+    transition: 0.5s ease;
+
+    &:hover {
+        text-decoration: underline;
+    }
+}
+
+@mixin mpfst-button {
+    width: 60px;
+    font-weight: lighter;
+    color: #bbb;
+    background-color: #fff;
+    border: 1px solid #bbb;
+    border-radius: 15px;
+    display: disabled;
+    cursor: auto;
+}
+
+@mixin mpfst-lr {
+    border: 1px solid #bbb;
+    border-radius: 8px;
+    width: 445px;
+}
+
+@mixin mpfst-lrTop {
+    display: flex;
+    justify-content: space-between;
+    margin: 10px;
+}
+
+@mixin mpfst-lrBottonOrange {
+    display: flex;
+    margin: 10px;
+
+    i {
+        margin-right: 10px;
+        color: orangered;
+    }
+
+}
+
+@mixin mpfst-lrBottonPurple {
+    display: flex;
+    margin: 10px;
+
+    i {
+        margin-right: 10px;
+        color: purple;
+    }
+}
